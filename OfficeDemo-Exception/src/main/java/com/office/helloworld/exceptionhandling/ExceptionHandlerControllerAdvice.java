@@ -19,6 +19,7 @@ public class ExceptionHandlerControllerAdvice {
 		ExceptionResponse error = new ExceptionResponse();
 		error.setErrorMessage(exception.getMessage());
 		error.callerURL(request.getRequestURI());
+		error.setErrorDescription("Resource not found ji");
 
 		return error;
 	}

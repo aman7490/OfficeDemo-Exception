@@ -3,6 +3,7 @@ package com.office.helloworld.exceptionhandling;
 public class ExceptionResponse {
 
 	private String errorMessage;
+	private String errorDescription;
 	private String requestedURI;
 
 	public String getErrorMessage() {
@@ -19,5 +20,13 @@ public class ExceptionResponse {
 
 	public void callerURL(final String requestedURI) {
 		this.requestedURI = requestedURI;
+	}
+
+	public String getErrorDescription() {
+		return errorDescription;
+	}
+
+	public void setErrorDescription(String errorDescription) {
+		this.errorDescription = errorDescription;
 	}
 }
